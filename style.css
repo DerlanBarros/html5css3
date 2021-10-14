@@ -5,29 +5,37 @@
 */
 
 /* Importações (Google fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /* CSS Reset */
-*{
+
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
 
 /* Layout */
-.Container{
+
+.Container {
     margin: 0 auto;
     background-color: #dcdcdc;
 }
 
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a9a9a9;
+}
+
 /* Topo do site */
-#topo{
+
+#topo {
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -35,44 +43,70 @@ body{
 
 /* Smartphone Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* Cabeçalho */
+
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
-    body{
+
+@media (min-width: 576px) {
+    body {
         background-color: aqua;
     }
-    
     /* Layout */
-    .Container{
+    .Container {
         max-width: 540px;
     }
 }
+
 /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px){
-    body{
+
+@media (min-width: 768px) {
+    body {
         background-color: #ffff00;
     }
     /* Layout */
-    .Container{
+    .Container {
         max-width: 720px;
     }
 }
+
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px){
-    body{
+
+@media (min-width: 992px) {
+    body {
         background-color: #ff6600;
     }
     /* Layout */
-    .Container{
+    .Container {
         max-width: 960px;
     }
 }
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1200px){
-    body{
+
+@media (min-width: 1200px) {
+    body {
         background-color: #ff0000;
     }
     /* Layout */
-    .Container{
+    .Container {
         max-width: 1140px;
+    }
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+    #logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
     }
 }
